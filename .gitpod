@@ -2,5 +2,4 @@ ports:
   - port: 8080
     protocol: "http"
 tasks:
-  - command: "laravel/artisan serv --host=0.0.0.0 --port=8080"
-  
+  - command: "cd laravel && composer install && ./artisan serv --host=0.0.0.0 --port=8080"
